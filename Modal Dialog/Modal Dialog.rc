@@ -1,0 +1,195 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "windows.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian (Russia) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG2 DIALOGEX 0, 0, 134, 178
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Автозаправка"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Бензин",IDC_PRICE_P,6,6,116,48
+    LTEXT           "Тип",IDC_PRICE_P,12,18,14,8
+    COMBOBOX        IDC_COMBO1,30,18,48,54,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Цена",IDC_PRICE_P,12,36,18,8
+    GROUPBOX        "",IDC_PRICE_P,7,54,114,48
+    CONTROL         "Кол-во",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,13,66,39,10
+    CONTROL         "Цена",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,13,84,33,10
+    EDITTEXT        IDC_EDIT1,55,66,54,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,55,84,54,14,ES_AUTOHSCROLL
+    GROUPBOX        "",IDC_PRICE_P,7,99,115,40,BS_CENTER
+    LTEXT           "Итого",IDC_PRICE_P,14,117,20,8
+    LTEXT           "грн",IDC_PRICE_P,86,117,12,8
+    PUSHBUTTON      "Ок",IDOK,7,139,120,32
+    EDITTEXT        IDC_EDIT3,35,33,40,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT5,39,115,40,14,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_DIALOG1 DIALOGEX 0, 0, 204, 108
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Заправка"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Автозаправка",IDC_BUTTON1,7,7,91,52
+    PUSHBUTTON      "Кафе",IDC_BUTTON2,98,7,99,53
+    GROUPBOX        "Итого",-1,7,65,96,36
+    LTEXT           "Всего:",-1,11,77,24,12
+    LTEXT           "0",IDC_ALL_PRICE,43,77,36,12,WS_BORDER
+    LTEXT           "грн",-1,85,77,24,12
+END
+
+IDD_DIALOG3 DIALOGEX 0, 0, 234, 117
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Кафе"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "",-1,6,6,54,66
+    CONTROL         "Хот-дог",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,18,42,10
+    CONTROL         "Бургер",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,30,39,10
+    CONTROL         "Кола",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,42,32,10
+    CONTROL         "Кофе",IDC_CHECK4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,54,34,10
+    GROUPBOX        "Цена",-1,66,6,48,66,BS_CENTER
+    CTEXT           "40 грн",-1,72,18,36,12,WS_BORDER
+    CTEXT           "45 грн",-1,72,30,36,12,WS_BORDER
+    CTEXT           "25 грн",-1,72,42,36,12,WS_BORDER
+    CTEXT           "30 грн",-1,72,54,36,12,WS_BORDER
+    GROUPBOX        "Кол-во",-1,135,7,68,66,BS_CENTER
+    EDITTEXT        IDC_HOTDOG,149,17,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_BURGER,149,29,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_COLA,149,41,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_COFFE,149,53,40,14,ES_AUTOHSCROLL
+    GROUPBOX        "",-1,7,76,90,30
+    LTEXT           "Итого:",-1,7,87,23,8
+    LTEXT           "грн",-1,78,88,12,8
+    PUSHBUTTON      "Ок",IDOK,134,79,72,24
+    EDITTEXT        IDC_KAFE,35,84,40,14,ES_AUTOHSCROLL | ES_READONLY
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 127
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 171
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 197
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 101
+    END
+
+    IDD_DIALOG3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 227
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 113
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_DIALOG1 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG2 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG3 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+#endif    // Russian (Russia) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Ukrainian (Ukraine) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_UKR)
+LANGUAGE LANG_UKRAINIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""windows.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Ukrainian (Ukraine) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
